@@ -1,0 +1,38 @@
+.sidebar {
+  height: 100vh;
+  flex: 0.2;
+  color: #fff;
+  padding: 1.5rem 1rem;
+  min-width: 23rem;
+  background-color: #040404;
+}
+.sidebar > hr{
+  border: 1px solid #282828;
+  width: 90%;
+  margin: 1rem auto;
+}
+.sidebar__container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 1rem;
+    margin-right: auto;
+}
+.sidebar__container > h1{
+    color: #fff;
+    user-select: none;
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.sidebar__logo {
+    user-select: none;
+    object-fit: contain;
+    height: 6rem;
+    /* width: 100%; */
+  }
+  .sidbar__title{
+    margin-left: .6rem;
+    padding: .5rem;
+    font-size: 1.4rem;
+  }
