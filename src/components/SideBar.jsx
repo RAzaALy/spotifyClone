@@ -3,9 +3,10 @@ import SidebarOption from "./SidebarOption";
 import HomeRoundedIcon from "@material-ui/icons/HomeRounded";
 import SearchIcon from "@material-ui/icons/Search";
 import LibraryMusicIcon from "@material-ui/icons/LibraryMusic";
-
 import "./SideBar.css";
+import { Consumer } from "./StateProvider";
 const SideBar = () => {
+  const [{ playlists }, dispatch] = Consumer();
   return (
     <div className="sidebar">
       {/* <img className="sidebar__logo" src="logo.svg" alt="logo" /> */}
@@ -19,10 +20,9 @@ const SideBar = () => {
       <br />
       <strong className="sidbar__title">Playlist</strong>
       <hr />
-      <SidebarOption title="Dark Night" />
-      <SidebarOption title="Coding Music" />
-      <SidebarOption title="Love In fall" />
-      <SidebarOption title="Hip Hop" />
+      {playlists?.items?.map((playlist) => (
+        <SidebarOption title={playlist.name} />
+      ))}
     </div>
   );
 };

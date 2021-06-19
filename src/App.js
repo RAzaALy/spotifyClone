@@ -39,7 +39,7 @@ const App = () => {
     }
   }, []);
   console.log(user);
-  console.log("token",token);
+  // console.log("token",token);
   return(
   <div>
   {token ? 
