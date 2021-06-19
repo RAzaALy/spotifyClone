@@ -1,9 +1,44 @@
-.body{
-    flex: 0.8;
-    padding: 3rem;
-    height: 100vh;
-    color: #fff;
-    background:linear-gradient(
-        rgb(91, 87, 115),rgba(0,0,0,1)
-    )
+.body {
+  flex: 0.8;
+  padding: 3rem;
+  height: 100vh;
+  color: #fff;
+  background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));
+}
+.body__info {
+  display: flex;
+  align-items: flex-end;
+  padding: 1.2rem;
+}
+.body__info > img {
+  height: 20vw;
+  margin: 0 2rem;
+  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+}
+.body__infoText {
+  flex: 1;
+}
+.body__infoText > h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.body__infoText > p {
+  font-size: 1.4rem;
+}
+.body__songs{
+
+}
+.body__icons{
+    display: flex;
+    align-items: center;
+
+}
+.body__icons > .MuiSvgIcon-root{
+ margin-right: 2rem !important;   
+}
+.body__icons .body__play{
+font-size: 8rem !important;
+margin-left: 5rem !important;
+margin-top: 2rem !important;
+margin-bottom: 2rem !important;
 }

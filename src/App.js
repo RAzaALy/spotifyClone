@@ -9,8 +9,7 @@ import "./App.css";
 const spotify = new SpotifyWebApi();
 
 const App = () => {
-
-  const [{user,token},dispatch] = Consumer();
+  const [{ user, token }, dispatch] = Consumer();
 
   useEffect(() => {
     const hash = getToken();
@@ -20,36 +19,33 @@ const App = () => {
     if (_token) {
       dispatch({
         type: "SET_TOKEN",
-        token: _token
-      })
+        token: _token,
+      });
       spotify.setAccessToken(_token);
       spotify.getMe().then((user) => {
         // console.log(user);
         dispatch({
-          type: 'SET_USER',
-          user: user
-        })
+          type: "SET_USER",
+          user: user,
+        });
       });
       spotify.getUserPlaylists().then((playlists) => {
         dispatch({
           type: "SET_PLAYLIST",
-          playlists: playlists
-        })
-      })
+          playlists: playlists,
+        });
+      });
+      spotify.getPlaylist("5X6GcDc4xViEEp3Oq27WWb").then((response) => {
+        dispatch({
+          type: "SET_DISCOVER_WEEKLY",
+          discover_weekly: response,
+        });
+      });
     }
   }, []);
   console.log(user);
   // console.log("token",token);
-  return(
-  <div>
-  {token ? 
-  (<Player spotify={spotify} />) :
-  (
-  <Login />
-  ) 
-  }
-  </div>
-  )
+  return <div>{token ? <Player spotify={spotify} /> : <Login />}</div>;
 };
 
 export default App;
