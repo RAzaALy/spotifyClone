@@ -1,9 +1,13 @@
 .body {
+  overflow-y: overlay;
   flex: 0.8;
   padding: 3rem;
   height: 100vh;
   color: #fff;
   background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));
+}
+.body::-webkit-scrollbar {
+  display: none;
 }
 .body__info {
   display: flex;
@@ -25,20 +29,37 @@
 .body__infoText > p {
   font-size: 1.4rem;
 }
-.body__songs{
-
+.body__songs {
+  margin: 2.8rem -3rem;
 }
-.body__icons{
-    display: flex;
-    align-items: center;
-
+.body__icons {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
-.body__icons > .MuiSvgIcon-root{
- margin-right: 2rem !important;   
+.body__icons > .MuiSvgIcon-root {
+  margin-right: 2rem !important;
 }
-.body__icons .body__play{
-font-size: 8rem !important;
-margin-left: 5rem !important;
-margin-top: 2rem !important;
-margin-bottom: 2rem !important;
+.body__icons .body__play {
+  font-size: 4.5rem !important;
+  margin-left: 5rem !important;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+.body__icons .body__play:hover {
+  transition: 100ms transform ease-in !important;
+  color: #1ed760;
+  transform: scale(1.08);
+}
+.body__icons .body__like {
+  font-size: 2.5rem !important;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+.body__icons .body__like:hover {
+  transition: 100ms transform ease-in !important;
+  color: red;
+  transform: scale(1.2);
 }

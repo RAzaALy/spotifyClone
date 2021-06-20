@@ -14,14 +14,15 @@ const SideBar = () => {
         <img src="logo.svg" alt="logo" className="sidebar__logo" />
         <h1>Spotify</h1>
       </div>
+
       <SidebarOption title="Home" Icon={HomeRoundedIcon} />
       <SidebarOption Icon={SearchIcon} title="Search" />
       <SidebarOption Icon={LibraryMusicIcon} title="Your Libarary" />
       <br />
       <strong className="sidbar__title">Playlist</strong>
       <hr />
-      {playlists?.items?.map((playlist) => (
-        <SidebarOption title={playlist.name} />
+      {playlists?.items?.map((playlist, index) => (
+        <SidebarOption title={playlist.name} key={index} />
       ))}
     </div>
   );

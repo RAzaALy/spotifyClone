@@ -1,3 +1,28 @@
-.player__body{
+.player__body {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .player__body {
+    flex-direction: row;
+  }
+  .body {
+    flex: 0.9999 !important;
+  }
+
+  .sidebar {
+    flex: 0.000004;
+  }
+
+  .footer__left {
+    display: none;
+  }
+  .footer__right {
+    display: none !important;
+  }
+  .footer {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+  }
 }
