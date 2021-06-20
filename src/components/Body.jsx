@@ -7,7 +7,7 @@ import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import PlayCircleFilledWhiteIcon from "@material-ui/icons/PlayCircleFilledWhite";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 const Body = ({ spotify }) => {
-  const [{ discover_weekly }, dispatch] = Consumer();
+  const [{ discover_weekly }] = Consumer();
   return (
     <div className="body">
       <Header />

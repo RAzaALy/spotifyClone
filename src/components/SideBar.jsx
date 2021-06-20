@@ -6,7 +6,7 @@ import LibraryMusicIcon from "@material-ui/icons/LibraryMusic";
 import "./SideBar.css";
 import { Consumer } from "./StateProvider";
 const SideBar = () => {
-  const [{ playlists }, dispatch] = Consumer();
+  const [{ playlists }] = Consumer();
   return (
     <div className="sidebar">
       {/* <img className="sidebar__logo" src="logo.svg" alt="logo" /> */}

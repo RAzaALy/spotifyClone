@@ -9,7 +9,7 @@ import "./App.css";
 const spotify = new SpotifyWebApi();
 
 const App = () => {
-  const [{ user, token }, dispatch] = Consumer();
+  const [{token }, dispatch] = Consumer();
 
   useEffect(() => {
     const hash = getToken();
@@ -42,6 +42,7 @@ const App = () => {
         });
       });
     }
+     // eslint-disable-next-line
   }, []);
   // console.log(user);
   // console.log("token",token);

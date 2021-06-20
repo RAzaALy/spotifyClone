@@ -5,7 +5,7 @@ import { Consumer } from "./StateProvider";
 
 import "./Header.css";
 const Header = () => {
-  const [{ user }, dispatch] = Consumer();
+  const [{ user }] = Consumer();
   return (
     <div className="header">
       <div className="header__left">
