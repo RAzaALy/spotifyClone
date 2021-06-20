@@ -14,12 +14,12 @@ const Footer = () => {
       <div className="footer__left">
         <img
           className="footer__albumLogo"
-          src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/artistic-album-cover-design-template-d12ef0296af80b58363dc0deef077ecc_screen.jpg?ts=1561488440"
+          src="https://i.scdn.co/image/ab67616d0000b273dddbac1b8d6c89231c4c4743"
           alt=""
         />
         <div className="footer__songInfo">
-          <h4>No song playing</h4>
-          <p>awesome song on the spotify</p>
+          <h4>Optimistic Nihilism</h4>
+          <p>Epic MountainKurzgesagt,Original)</p>
         </div>
       </div>
       <div className="footer__center">

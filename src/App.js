@@ -35,7 +35,7 @@ const App = () => {
           playlists: playlists,
         });
       });
-      spotify.getPlaylist("5X6GcDc4xViEEp3Oq27WWb").then((response) => {
+      spotify.getPlaylist("37i9dQZF1DX5trt9i14X7j").then((response) => {
         dispatch({
           type: "SET_DISCOVER_WEEKLY",
           discover_weekly: response,
@@ -43,7 +43,7 @@ const App = () => {
       });
     }
   }, []);
-  console.log(user);
+  // console.log(user);
   // console.log("token",token);
   return <div>{token ? <Player spotify={spotify} /> : <Login />}</div>;
 };

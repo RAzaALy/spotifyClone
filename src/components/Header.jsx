@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React from "react";
 import SearchRoundedIcon from "@material-ui/icons/SearchRounded";
 import Avatar from "@material-ui/core/Avatar";
 import { Consumer } from "./StateProvider";
@@ -6,11 +6,8 @@ import { Consumer } from "./StateProvider";
 import "./Header.css";
 const Header = () => {
   const [{ user }, dispatch] = Consumer();
-  const [css, setCss] = useState(false);
   return (
     <div className="header">
-   
-    
       <div className="header__left">
         <SearchRoundedIcon />
         <input type="text" placeholder="Search for Artist,Albums,Songs" />
