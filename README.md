@@ -1,3 +1,8 @@
+# Spotify Clone
+<a href="http://spotifyclone-7e1f9.web.app" >Live Demo</a>
+<img src="https://imguploader.net/if/7NvCBEAkEvVE.png" alt="img" />
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
