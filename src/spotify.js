@@ -4,7 +4,7 @@ export const authPoint = "https://accounts.spotify.com/authorize";
 // const redirectUrl = "http://localhost:3000/";
 const redirectUrl = "http://spotifyclone-7e1f9.web.app/";
 //client id:
-const clientId = "8434edefb96045378d2e2235e22880a0";
+const clientId = "youclientid";
 //premission scope
 const scopes = [
   "user-read-recently-played",
